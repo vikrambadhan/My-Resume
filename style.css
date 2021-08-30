@@ -1,5 +1,7 @@
 body{
     margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
 }
 
 /* Body Header */
@@ -11,6 +13,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 1.2rem;
 }
 
 /* Horizontal Lists */
@@ -18,25 +21,58 @@ body{
 .horizontal-list{
     list-style: none;
     padding-left: 0px;
+    margin: 0px;
 }
 
 .horizontal-list li{
     display: inline-block;
     margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
 }
 
 
 .horizontal-list li a{
     color: white;
     text-decoration: none;
+}
+
+.nav-menu li a{
     transition: color 0.5s, border-bottom 4s;
 }
 
-.horizontal-list li a:hover{
+.nav-menu li a:hover{
     color: lightgrey;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 
 .text-center{
     text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i{
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
