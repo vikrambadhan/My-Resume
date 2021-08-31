@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     font-family: sans-serif;
     font-size: 30px;
@@ -6,7 +6,7 @@ body{
 
 /* Body Header */
 
-#body-header{
+#body-header {
     height: 65vh;
     opacity: 0.8;
     background-image: url(image/macbook_mouse.jpg);
@@ -18,13 +18,13 @@ body{
 
 /* Horizontal Lists */
 
-.horizontal-list{
+.horizontal-list {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
 }
 
-.horizontal-list li{
+.horizontal-list li {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
@@ -32,31 +32,31 @@ body{
 }
 
 
-.horizontal-list li a{
+.horizontal-list li a {
     color: white;
     text-decoration: none;
 }
 
-.nav-menu li a{
+.nav-menu li a {
     transition: color 0.5s, border-bottom 4s;
 }
 
-.nav-menu li a:hover{
+.nav-menu li a:hover {
     color: lightgrey;
     border-bottom: 1px solid black;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 /* Name and Social Icons*/
 
-#name-social-container{
+#name-social-container {
     margin-top: 20vh;
 }
 
-#my-name{
+#my-name {
     font-size: 3rem;
     letter-spacing: 0.1rem;
     color: white;
@@ -65,7 +65,7 @@ body{
 }
 
 
-.social-icons li a i{
+.social-icons li a i {
     /*color: red;*/
     padding: 10px;
     font-size: 1rem;
@@ -73,28 +73,67 @@ body{
 }
 
 
-.social-icons li a i:hover{
+.social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*Section Classes*/
+
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
 }
 
 /*About Section*/
 
-#about{
+#about {
     height: auto;
     width: 100%;
     position: relative;
 }
 
-#my-image{
+#my-image {
     height: 12rem;
     width: 12rem;
     margin: auto;
     margin-top: -17vh;
 }
 
-#my-image img{
+#my-image img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
 
 }
