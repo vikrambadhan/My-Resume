@@ -96,6 +96,20 @@ section:nth-child(2n + 1) {
     background-color: white;
 }
 
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
 /*About Section*/
 
 #about {
@@ -131,6 +145,27 @@ section:nth-child(2n + 1) {
     font-weight: 100;
     font-size: 1.1rem;
 }
+
+/*Skills Section*/
+
+
+.skills-display {
+    width: 70%;
+    /*height: 100px;*/
+    /*border: 2px solid black; 	*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/* Common Margin Classes */
+.mb75px {
+    margin-bottom: 75px;
+}
+
+/*common color classes */
 
 .text-highlight {
     color: #2857a4;
